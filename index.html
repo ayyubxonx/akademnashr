@@ -9,12 +9,17 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
+        <div class="header-line"></div>
+
         <div class="container header-container">
             <!-- Logo -->
             <a href="index.html" data-aos="zoom-in">
@@ -23,26 +28,30 @@
 
             <!-- Navbar -->
             <div>
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <nav class="navbar-wrapper">
+
                     <ul class="header-links">
                         <li>
-                            <a class="header-link" href="#" data-aos="fade-down-right" data-aos-delay="200">Bosh
+                            <a class="header-link" href="#" data-aos="fade-down-right" data-aos-delay="100">Bosh
                                 Sahifa</a>
                         </li>
                         <li>
-                            <a class="header-link" href="#" data-aos="fade-down0right" data-aos-delay="400">Kitoblar</a>
+                            <a class="header-link" href="#" data-aos="fade-down0right" data-aos-delay="150">Kitoblar</a>
                         </li>
                         <li>
                             <a class="header-link" href="#" data-aos="fade-down0right"
-                                data-aos-delay="600">Aksiyalar</a>
+                                data-aos-delay="200">Aksiyalar</a>
                         </li>
                         <li>
                             <a class="header-link" href="#" data-aos="fade-down0right"
-                                data-aos-delay="800">Kontaktlar</a>
+                                data-aos-delay="250">Kontaktlar</a>
                         </li>
                     </ul>
 
-                    <a class="orange-button" href="#" data-aos="zoom-in">Ro'yxatdan o'tish</a>
+                    <a class="orange-button " href="#" data-aos="zoom-in">Ro'yxatdan o'tish</a>
                 </nav>
             </div>
 
@@ -56,6 +65,7 @@
             <div class="container hero-container">
                 <!-- Content -->
                 <div class="hero-content" data-aos="fade-right">
+                    <div class="line"></div>
                     <h2 class="hero-title">
                         Pythonda dasturlash
                         asoslari
@@ -66,28 +76,32 @@
                         mumkin.
                     </p>
 
-                    <a class="orange-button" href="#">Buyurtma berish</a>
+                    <a class="orange-button hero-button" href="#">Buyurtma berish</a>
                 </div>
-                <img src="./images/python-book.jpg" width="510px" height="510px" alt="python-book" data-aos="fade-left">
+                <div class="hero-img">
+                    <img class="book-img" src="./images/python-book.jpg" width="510px" alt="python-book"
+                        data-aos="fade-left">
+                </div>
             </div>
         </section>
 
         <!-- Why -->
         <section class="why">
             <div class="container">
-                <h1 class="title" data-aos="zoom-in-up">
+                <div class="why-line"></div>
+                <h1 class="title" data-aos="zoom-in-up" data-aos-delay="50">
                     Nega aynan <br>
                     Akademnashr?
                 </h1>
                 <ul class="cards">
-                    <li class="card" data-aos="flip-up" data-aos-delay="200">
+                    <li class="card" data-aos="flip-up" data-aos-delay="100">
                         <span class="circle">
                             <img src="./images/cursor.svg" width="47px" height="47px" alt="Cursor photo">
                         </span>
                         <h3 class="card-title">Oson buyurtma qilish</h3>
                         <p>Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
                     </li>
-                    <li class="card" data-aos="flip-up" data-aos-delay="400">
+                    <li class="card" data-aos="flip-up" data-aos-delay="150">
                         <span class="circle">
                             <img src="./images/stars.svg" width="45px" height="45px" alt="Stars photo">
                         </span>
@@ -95,7 +109,7 @@
                         <p>Trenddagi eng ommabop, turli auditoriyalarga mo’ljallangan har xil janrdagi kitoblarni topa
                             olasiz.</p>
                     </li>
-                    <li class="card" data-aos="flip-up" data-aos-delay="600">
+                    <li class="card" data-aos="flip-up" data-aos-delay="200">
                         <span class="circle">
                             <img src="./images/thunder.svg" width="56px" height="56px" alt="Thunder photo">
                         </span>
@@ -109,8 +123,8 @@
         </section>
 
         <!-- CTA -->
-        <section class="cta">
-            <div class="container cta-container">
+        <section class="cta container">
+            <div class=" cta-container">
                 <!-- Content -->
                 <div class="cta-content" data-aos="fade-down-right" data-aos-delay="200">
                     <h2 class="cta-title">
@@ -131,7 +145,10 @@
                         Buyurtma berish
                     </a>
                 </div>
-                <img src="./images/sale-img.jpg" width="440px" height="440px" alt="Books" data-aos="fade-down-left" data-aos-delay="200"> 
+                <div class="cta-img">
+                    <img class="cta-books" src="./images/sale-img.jpg" width="440px" alt="Books"
+                        data-aos="fade-down-left" data-aos-delay="200">
+                </div>
             </div>
         </section>
     </main>
@@ -142,7 +159,8 @@
             <div class="footer-top">
                 <!-- Logo -->
                 <a href="index.html">
-                    <img src="./images/logo.svg" width="227px" height="60px" alt="logo" data-aos="zoom-in-up" data-aos-delay="150">
+                    <img src="./images/logo.svg" width="227px" height="60px" alt="logo" data-aos="zoom-in-up"
+                        data-aos-delay="150">
                 </a>
                 <div>
                     <ul class="socials">
@@ -170,65 +188,76 @@
                 <ul class="footer-links-wrapper">
                     <li data-aos="zoom-out" data-aos-delay="100">
                         <a class="footer-link" href="#">Bosh sahifa</a>
+                        <i class="fa-solid fa-caret-down"></i>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="150">
-                        <a class="footer-link" href="#">Kitoblar</a>
-                    </li>
-                    <li data-aos="zoom-out" data-aos-delay="200">
-                        <a class="footer-link" href="#">Aksiyalar</a>
-                    </li>
-                    <li data-aos="zoom-out" data-aos-delay="250">
-                        <a class="footer-link" href="#">Yangiliklar</a>
-                    </li>
-                    <li data-aos="zoom-out" data-aos-delay="300">
-                        <a class="footer-link" href="#">Kontaktlar</a>
-                    </li>
+                    <div class="footer-links-wrapper foot-none">
+                        <li data-aos="zoom-out" data-aos-delay="100">
+                            <a class="footer-link" href="#">Kitoblar</a>
+                        </li>
+                        <li data-aos="zoom-out" data-aos-delay="100">
+                            <a class="footer-link" href="#">Aksiyalar</a>
+                        </li>
+                        <li data-aos="zoom-out" data-aos-delay="100">
+                            <a class="footer-link" href="#">Yangiliklar</a>
+                        </li>
+                        <li data-aos="zoom-out" data-aos-delay="100">
+                            <a class="footer-link" href="#">Kontaktlar</a>
+                        </li>
+
+                    </div>
                 </ul>
 
                 <ul class="footer-links-wrapper">
-                    <li data-aos="zoom-out" data-aos-delay="350">
+                    <li data-aos="zoom-out" data-aos-delay="150">
                         <a class="footer-link" href="#">Ilmiy nashrlar</a>
+                        <i class="fa-solid fa-caret-down"></i>
+
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="400">
+
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="150">
                         <a class="footer-link" href="#">Ilmiy-ommabop nashrlar</a>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="450">
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="150">
                         <a class="footer-link" href="#">Marifiy nashrlar</a>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="500">
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="150">
                         <a class="footer-link" href="#">Lugatlar</a>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="550">
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="150">
                         <a class="footer-link" href="#">Adabiy-badiiy nashrlar</a>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="600">
+                    <li class="foot-none">
                         <a class="footer-link" href="#">Abituriyentlar uchun</a>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="650">
+                    <li class="foot-none">
                         <a class="footer-link" href="#">Bolalar uchun</a>
                     </li>
                 </ul>
 
                 <ul class="footer-links-wrapper">
-                    <li data-aos="zoom-out" data-aos-delay="700">
+                    <li data-aos="zoom-out" data-aos-delay="200">
                         <a class="footer-link" href="#">Kop soraladigan savollar</a>
+                        <i class="fa-solid fa-caret-down"></i>
+
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="750">
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="200">
                         <a class="footer-link" href="#">Yetkazib berish haqida</a>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="800">
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="200">
                         <a class="footer-link" href="#">Tolov usullari haqida</a>
                     </li>
                 </ul>
 
                 <ul class="footer-links-wrapper">
-                    <li data-aos="zoom-out" data-aos-delay="850">
+                    <li data-aos="zoom-out" data-aos-delay="250">
                         <a class="footer-link" href="#">Bosh ish orinlari</a>
+                        <i class="fa-solid fa-caret-down"></i>
+
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="900">
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="250">
                         <a class="footer-link" href="#">Biz bilan boglanish</a>
                     </li>
-                    <li data-aos="zoom-out" data-aos-delay="900">
+                    <li class="foot-none" data-aos="zoom-out" data-aos-delay="250">
                         <a class="footer-link" href="#">Maxfiylik nizomi</a>
                     </li>
                 </ul>
@@ -238,6 +267,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        AOS.init({
+            once: true
+        });
     </script>
 </body>
 

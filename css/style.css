@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 
-*:focus{
-  border: 3px solid orange;
+*:focus {
+    border: 3px dashed orange;
 }
 
 body {
-    font-family: 345енгшщsans-serif;
+    font-family: "Roboto";
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.5px;
@@ -36,12 +36,66 @@ body {
     border-radius: 4px;
 }
 
+
+.orange-button:hover {
+    background-color: #db7d2a;
+    color: white;
+}
+
 a {
     text-decoration: none;
 }
 
+
+a:hover {
+    transition: all 0.2s;
+    color: #ff7500;
+}
+
 ul {
     list-style: none;
+}
+
+.book-img {
+    border-radius: 10px;
+    box-shadow: 25px 25px rgba(255, 117, 0, 0.6);
+
+}
+
+.hero-img {
+    position: absolute;
+    left: 650px;
+}
+
+.hero-button {
+    margin-bottom: 78px;
+}
+
+.line {
+    width: 80px;
+    height: 3px;
+    background-color: #ff7500;
+    margin-bottom: 40px;
+}
+
+.why-line {
+    width: 80px;
+    height: 3px;
+    margin-top: 147px;
+    background-color: #ff7500;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: underline 3px #ff7500;
 }
 
 /* Header */
@@ -49,6 +103,14 @@ ul {
 .header {
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.header-line {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(255, 117, 0, 1);
+    margin-bottom: 10px;
+    margin-top: -16px;
 }
 
 .navbar-wrapper {
@@ -77,12 +139,12 @@ ul {
     background-color: #252420;
     color: white;
     padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 .hero-container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .hero-content {
@@ -106,7 +168,7 @@ ul {
 
 /* Why */
 .why {
-    padding-top: 236px;
+    /* padding-top: 236px; */
     padding-bottom: 330px;
 }
 
@@ -142,6 +204,10 @@ ul {
     max-width: 340px;
 }
 
+.card p {
+    max-width: 314px;
+}
+
 .card-title {
     margin-bottom: 12px;
     font-size: 24px;
@@ -155,11 +221,13 @@ ul {
     color: white;
     padding: 64px;
     margin-bottom: 160px;
+    border-radius: 10px;
 }
 
 .cta-container {
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-between;
 }
 
@@ -173,11 +241,23 @@ ul {
     font-size: 40px;
     line-height: 120%;
     font-family: "Roboto Condensed";
+    margin-bottom: 30px;
+
 }
 
 .cta-text {
     margin-top: 12px;
     margin-bottom: 24px;
+}
+
+.cta-img {
+    position: absolute;
+    left: 596px;
+    top: -150px;
+}
+
+.cta-books {
+    border-radius: 12px;
 }
 
 .orange-text {
@@ -206,6 +286,7 @@ ul {
 
 .footer-bottom {
     display: flex;
+    gap: 46px;
     justify-content: space-between;
     padding-top: 64px;
 }
@@ -218,4 +299,130 @@ ul {
 
 .footer-link {
     color: #252420;
+}
+
+
+@media (max-width: 1332px) {
+    .hero-img {
+        /* display: flex; */
+        position: absolute;
+        left: 450px;
+    }
+
+    .cta-img {
+        position: absolute;
+        left: 456px;
+        top: -150px;
+
+    }
+}
+
+@media (max-width: 962px) {
+    .cta-container {
+        display: flex;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 993px) {
+    .hero-container {
+        display: block;
+    }
+
+    .hero-img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+@media (max-width: 942px) {
+    .navbar-wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 942px) {
+    .menu {
+        display: none;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 942px) {
+    .menu {
+        font-size: 30px;
+    }
+
+    .cta-container {
+        display: block;
+    }
+
+    .cta-img img {
+        width: 340px;
+
+    }
+
+    .cta-img {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+    }
+
+    .cta {
+        margin: 4px;
+        padding: 4px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 726px) {
+    .footer-bottom {
+        padding-top: 64px;
+    }
+
+    .foot-none {
+        display: none;
+    }
+}
+
+@media (min-width: 726px) {
+    .footer-bottom i {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 712px) {
+    .footer-bottom {
+        flex-wrap: wrap;
+    }
+
+    .book-img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 469px) {
+
+    .book-img {
+        width: 250px;
+    }
+
+    .why h1 {
+        font-size: 30px;
+        line-height: 120%;
+
+    }
+
+
 }
